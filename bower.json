@@ -1,9 +1,9 @@
 {
-  "name": "Recuperatorio Segundo Parcial",
+  "name": "api_rest_php",
   "authors": [
-    "Lautaro <n.alegria@outlook.com>"
+    "Leon <leontelletxea@gmail.com>"
   ],
-  "description": "Aplicacion full stack",
+  "description": "api_rest_php",
   "main": "",
   "license": "MIT",
   "homepage": "",
