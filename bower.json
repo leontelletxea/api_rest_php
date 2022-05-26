@@ -1,0 +1,15 @@
+{
+  "name": "Recuperatorio Segundo Parcial",
+  "authors": [
+    "Lautaro <n.alegria@outlook.com>"
+  ],
+  "description": "Aplicacion full stack",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "bootstrap" : "4.6.0",
+    "jquery" : "*",
+    "fontawesome" : "5.15"
+  }
+}

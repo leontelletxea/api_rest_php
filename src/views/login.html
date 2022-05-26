@@ -1,0 +1,56 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{titulo}}</title>
+
+    <script type="text/javascript" src="{{base_path()}}/libs/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="{{base_path()}}/libs/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript" src="{{base_path()}}/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{base_path() }}/libs/fontawesome/css/all.css">
+    <!-- Funciones propias -->
+    <script type="text/javascript" src="{{base_path()}}/scripts/login.js"></script>
+    <script type="text/javascript" src="{{base_path()}}/scripts/validacion_login.js"></script>
+</head>
+
+<body style='background-color: chocolate;'>
+    <div class="container">
+        <div class="row col-lg-6 col-md-8 col-sm-10 m-auto pt-5">
+            <h1 class="titulo pb-2">LOGIN</h1>
+            <div class="w-100">
+                <div class="p-3 rounded-5" style="background-color: lightblue;">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="txtCorreoLogin" class="form-label mb-3" style="color: orangered; "><b>Correo</b></label>
+                            <div class="d-flex">
+                                <i class="fas fa-envelope pt-2 px-2 mx-1 rounded border bg-light"></i>
+                                <input type="email" class="form-control" placeholder="Correo" id="txtCorreoLogin">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="txtClaveLogin" class="form-label mb-3" style="color: orangered; "><b>Clave</b></label>
+                            <div class="d-flex">
+                                <i class="fas fa-key pt-2 px-2 mx-1 rounded border bg-light"></i>
+                                <input type="password" placeholder="Clave" class="form-control" id="txtClaveLogin">
+                            </div>
+                        </div>
+                        <div class="row justify-content-around mt-3 mb-5">
+                            <button type="submit" id="btnEnviar" class="col-4 btn btn-info" onclick="ValidarCampos(event)">Enviar</button>
+                            <button type="reset" class="col-4 btn btn-warning">Limpiar</button>
+                        </div>
+                        <!-- Alerta -->
+                        <div id='mensajeError'></div>
+                        <!-- Fin alerta -->
+                        <div class="row mt-5">
+                            <button type="button" class="btn btn-success w-100" id="btnQuieroRegistrarme">Quiero registrarme!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
